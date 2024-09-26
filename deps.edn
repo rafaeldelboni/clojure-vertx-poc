@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :deps  {org.clojure/clojure {:mvn/version "1.12.0"}
+         io.vertx/vertx-core {:mvn/version "4.5.10"}
+         io.vertx/vertx-web {:mvn/version "4.5.10"}}
+ :aliases
+ {:start-server {:ns-default clj-vertx
+                 :exec-fn start-server!}
+  :start-route-server {:ns-default clj-vertx
+                       :exec-fn start-route-server!}}}
